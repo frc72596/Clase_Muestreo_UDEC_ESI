@@ -12,7 +12,6 @@ library(dplyr)
 #Población
 Po_Cancer <- read_csv("MORBILIDAD_POR_CANCER_20250328.csv")
 summary(Po_Cancer)
-str(Po_Cancer)
 describe.by(Po_Cancer,Po_Cancer$SEXO)
 # Muestra 1
 Mu1_Cancer<-sample_n(Po_Cancer,381) # 95% C y 5 E -> 381
